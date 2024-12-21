@@ -2,11 +2,13 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
 }
+
 html {
   height: 100%;
 }
+
 .page {
   position: relative;
   display: flex;
@@ -16,13 +18,15 @@ html {
   background-color: #fec7ee;
   padding-top: 60px;
 }
+
 .page::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   z-index: 1;
   background-color: rgb(255 255 255 / 0.3);
 }
+
 .page__title {
   max-width: 720px;
   font-size: 116px;
@@ -32,16 +36,19 @@ html {
   margin: 0 auto;
   z-index: 1;
 }
+
 .page__title::after {
-  content: "*";
+  content: '*';
   position: relative;
 }
+
 .page__title:hover {
   color: #4c4c4c;
   cursor: default;
 }
+
 .page__title:hover::before {
-  content: "На самом деле нет.\AВажнее &mdash; научиться ошибаться.";
+  content: 'На самом деле нет.\AВажнее &mdash; научиться ошибаться.';
   white-space: pre;
   position: absolute;
   top: 180px;
@@ -60,6 +67,7 @@ html {
   text-transform: initial;
   background-color: #fff;
 }
+
 .page__video {
   position: absolute;
   z-index: -1;
